@@ -1,17 +1,17 @@
-# Kux Launcher 🚀
+# ViveX Launcher 🚀
 
-Kux Launcher is a modern, high-performance, and feature-rich Android launcher engineered using clean architecture, Kotlin, XML ViewBinding, and MVVM principles. It is inspired by industry-leading launchers like **Pixel Launcher**, **Nova Launcher**, and **Niagara**, delivering butter-smooth 60 FPS transitions and a premium, dark glassmorphic user experience.
+ViveX Launcher is a modern, high-performance, and feature-rich Android launcher engineered using clean architecture, Kotlin, XML ViewBinding, and MVVM principles. It is inspired by industry-leading launchers like **Pixel Launcher**, **Nova Launcher**, and **Niagara**, delivering butter-smooth 60 FPS transitions and a premium, dark glassmorphic user experience.
 
 ---
 
 ## 📖 Project Overview
-Kux Launcher transforms the basic Android home screen experience into a polished, recruiter-grade modern desktop ecosystem. By bridging a custom-developed, high-speed cellular grid system with physics-based gesture engines and real-time background search indexers, Kux Launcher demonstrates high-fidelity Android software engineering. It is built strictly with ViewBinding and traditional XML layouts (no Compose) to maximize performance and compatibility.
+ViveX Launcher transforms the basic Android home screen experience into a polished, recruiter-grade modern desktop ecosystem. By bridging a custom-developed, high-speed cellular grid system with physics-based gesture engines and real-time background search indexers, ViveX Launcher demonstrates high-fidelity Android software engineering. It is built strictly with ViewBinding and traditional XML layouts (no Compose) to maximize performance and compatibility.
 
 ---
 
 ## 🎨 System Architecture
 
-This architectural diagram outlines the separation of concerns, data pipelines, and interactive layer bonds inside Kux Launcher:
+This architectural diagram outlines the separation of concerns, data pipelines, and interactive layer bonds inside ViveX Launcher:
 
 ```mermaid
 graph TD
@@ -59,7 +59,7 @@ graph TD
 
 - **Persistent Desktop Grid & Dock**: Standard $5 \times 5$ cellular desktop grids and $5 \times 1$ persistent bottom Dock grids supporting shortcut dragging and repositioning.
 - **Glassmorphic Folders**: Merge desktop shortcuts dynamically into rounded folder containers, supporting rename, add, drag-out, and popups.
-- **Full-Screen App Drawer**: Seamless gesture-activated drawer with a 4-column application list and premium dark frosted-glass visual themes (#E6161616 90% opacity).
+- **Full-Screen Premium App Drawer**: Seamless gesture-activated drawer with a 4-column application list and premium dark frosted-glass visual themes (#E6161616 90% opacity).
 - **Real-Time Asynchronous Search**: CPU-bound search filtering executed entirely on `Dispatchers.Default` background threads.
 - **Highlight Substring Painting**: Highlights letters inside app labels matching the search query using bold accent typography in real-time.
 - **A-Z Fast Sidebar Scroll**: A vertical letter strip (`A-Z` and `#`) on the right side of the drawer that scrolls the app list instantly to matching entries when tapped or swiped.
@@ -88,14 +88,14 @@ graph TD
 
 | Home Screen Workspace | Full-Screen Search Drawer | Folder Container Popup |
 | :---: | :---: | :---: |
-| ![Workspace Desktop](https://placehold.co/360x740/121212/ffffff?text=Kux+Workspace+5x5) | ![Frosted Search Drawer](https://placehold.co/360x740/1e1e1e/ffffff?text=Frosted+Search+Drawer) | ![Folder Overlay Popup](https://placehold.co/360x740/121212/ffffff?text=Glassmorphic+Folder+Popup) |
+| ![Workspace Desktop](https://placehold.co/360x740/121212/ffffff?text=ViveX+Workspace+5x5) | ![Frosted Search Drawer](https://placehold.co/360x740/1e1e1e/ffffff?text=Frosted+Search+Drawer) | ![Folder Overlay Popup](https://placehold.co/360x740/121212/ffffff?text=Glassmorphic+Folder+Popup) |
 
 ---
 
 ## 📂 Project Structure
 
 ```
-com.kuxlauncher
+com.vivex.launcher
 │
 ├── drawer                      # App Drawer controllers, states & overlays
 │   ├── AppDrawerFragment.kt    # Main drawer layout coordinator fragment
@@ -168,7 +168,7 @@ Execute local gradle targets via command terminal:
 
 1. Open Android Studio's **Device Manager** and create a Virtual Device (AVD).
 2. Choose **API Level 34 (Android 14)** or higher for complete performance feature compatibility.
-3. Deploy Kux Launcher:
+3. Deploy ViveX Launcher:
    - Connect your real Android device (ensure Developer Options and USB Debugging are active) or boot up the virtual emulator.
    - Run the `:app` configuration using the Green Play Button in Android Studio.
 
@@ -176,8 +176,8 @@ Execute local gradle targets via command terminal:
 
 ## 🛡️ Launcher Permissions
 
-Kux Launcher requires the following configurations to act as a system-integrated workspace:
-- **Default Home App**: Upon deployment, press the system Home button. Select **Kux Launcher** and tap **"Always"** to register it as the default persistent desktop shell.
+ViveX Launcher requires the following configurations to act as a system-integrated workspace:
+- **Default Home App**: Upon deployment, press the system Home button. Select **ViveX Launcher** and tap **"Always"** to register it as the default persistent desktop shell.
 - **Package Visibility (`<queries>`)**: Declared inside `AndroidManifest.xml` to allow queries of other launchable activities in Android 11+ (API 30+).
 
 ---
@@ -216,23 +216,3 @@ Run the local JVM test suite to assert indexing, search matching, and caching fe
 1. **`testAppInfoCache_getSetClear`**: Assures that local registries write, cache, and evict app lists without leakage.
 2. **`testSearchIndexer_matching`**: Verifies case-insensitive app query matches, package name filtering, and empty query fallbacks.
 3. **`testSearchHighlighter_emptyQuery`**: Asserts that blank queries bypass framework `SpannableString` creation, enabling JVM compilation.
-
----
-
-## ⚠️ Known Limitations
-- Real-time blurring effects depend on solid translucent layers for backward compatibility down to Android 7 (API 24).
-- Widget addition support is prepared via future architectural hooks.
-
----
-
-## 🤝 Contributing
-1. Fork the Project.
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your Changes (`git commit -m 'feat: Add some AmazingFeature'`).
-4. Push to the Branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
-
----
-
-## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

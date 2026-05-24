@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kuxlauncher">
+    package="com.vivex.launcher">
 
     <!-- Declaring Queries for package visibility in Android 11+ (API 30+)
          Enables retrieving installed apps from PackageManager -->
@@ -17,11 +17,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.KuxLauncher">
+        android:theme="@style/Theme.ViveXLauncher">
         
         <!-- Launcher Main Activity -->
         <activity
-            android:name="com.kuxlauncher.view.MainActivity"
+            android:name="com.vivex.launcher.view.MainActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:stateNotNeeded="true"

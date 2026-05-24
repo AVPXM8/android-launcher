@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.kuxlauncher"
+    namespace = "com.vivex.launcher"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.kuxlauncher"
+        applicationId = "com.vivex.launcher"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

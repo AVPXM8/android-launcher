@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Modern Premium Transparent Theme for Kux Launcher to show system wallpaper -->
-    <style name="Theme.KuxLauncher" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.ViveXLauncher" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize theme colors -->
         <item name="colorPrimary">@color/primary_accent</item>
         <item name="colorAccent">@color/secondary_accent</item>

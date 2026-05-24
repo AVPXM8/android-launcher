@@ -75,7 +75,7 @@
         </LinearLayout>
 
         <!-- Cellular Grid Workspace -->
-        <com.kuxlauncher.homescreen.CellLayout
+        <com.vivex.launcher.homescreen.CellLayout
             android:id="@+id/workspaceGrid"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -113,7 +113,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <com.kuxlauncher.homescreen.CellLayout
+            <com.vivex.launcher.homescreen.CellLayout
                 android:id="@+id/dockGrid"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -125,7 +125,7 @@
     <!-- Full-Screen App Drawer Fragment Container -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/drawerContainer"
-        android:name="com.kuxlauncher.drawer.AppDrawerFragment"
+        android:name="com.vivex.launcher.drawer.AppDrawerFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
