@@ -1,15 +1,37 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Built-in Gradle & Android Build Outputs
+.gradle/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aar
+*.ap_
+*.class
+*.dex
+
+# Local developer overrides
 local.properties
+.env
+.env.*
+
+# Android Studio / IntelliJ IDEA settings
+.idea/workspace.xml
+.idea/libraries/
+.idea/shelf/
+.idea/caches/
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/modules.xml
+.idea/compiler.xml
+.idea/deploymentTargetSelector.xml
+.idea/deviceManager.xml
+.idea/migrations.xml
+.idea/planningMode.xml
+.idea/studiobot.xml
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
