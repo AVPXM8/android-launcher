@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modern Premium Transparent Theme for Kux Launcher to show system wallpaper -->
+    <style name="Theme.KuxLauncher" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize theme colors -->
+        <item name="colorPrimary">@color/primary_accent</item>
+        <item name="colorAccent">@color/secondary_accent</item>
+        
+        <!-- Enable system wallpaper behind activity window -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowShowWallpaper">true</item>
+        
+        <!-- Premium edge-to-edge status and navigation bars -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>
